@@ -1,0 +1,15 @@
+<%-- 左部导航栏 --%>
+
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<ul class="list-group" id="left-nav">
+	<a href="user/userindex.jsp" class="list-group-item"style='text-align: center;'>个人信息</a>
+	<a href="user/editPassword.jsp" class="list-group-item"style='text-align: center;'>修改密码</a>
+	<%-- 设置权限 --%>
+	<%-- <c:if test="${user.type == 5 }"> --%>
+		<a href="user/userManage.jsp" class="list-group-item" style='text-align: center;'>账户管理</a>
+		<a href="book/itemManage.jsp"  class="list-group-item"style='text-align: center;'>菜单管理</a>
+		<a href="user/salary.jsp" class="list-group-item"style='text-align: center;'>员工业绩</a>
+		<a href="user/salaryAnalysis.jsp" class="list-group-item"style='text-align: center;'>运营分析</a>
+	<%-- </c:if>	--%>
+</ul>
